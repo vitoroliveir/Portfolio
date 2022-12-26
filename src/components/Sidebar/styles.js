@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Links = styled.div`
     position:absolute;
-    left:50%;
+    left:55%;
     ul{
         display:flex;
         flex-direction:row;
