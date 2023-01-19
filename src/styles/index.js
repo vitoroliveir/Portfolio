@@ -1,16 +1,32 @@
 import styled from 'styled-components';
 
 export const Body = styled.div`
-    background-color:#E5E5E5;
+    background-color:white;
     width:100vw;
-    height:5000px;
+    height:3850px;
+
+    @media (min-width:412px) {
+        height:3960px;
+    }
+
+    @media (min-width:622px) {
+        height:3800px;
+    }
+
+    @media (min-width:829px) {
+        height:3680px;
+    }
+
+    @media (min-width:1037px) {
+        height:3550px;
+    }
 `
 
 export const LinkHome = styled.div`
         position:absolute;
         top:17%;
 
-        @media (min-width:501px) {
+        @media (min-width:553px) {
             top:25%;
         }
 `
@@ -30,7 +46,7 @@ export const ImageHome = styled.div`
             top:-3vh;
         }
 
-        @media (min-width:501px) {
+        @media (min-width:553px) {
             width:500px;
             height:500px;
             left:7vw;
@@ -38,11 +54,16 @@ export const ImageHome = styled.div`
         }
 
         @media (min-width:656px) {
-            left:18vw;
+            left:10vw;
             
         }
 
-        @media (min-width:950px) {
+        @media (min-width:700px) {
+            left:23vw;
+            
+        }
+
+        @media (min-width:1120px) {
             left:53vw;
             top:0vh;
         }
@@ -94,12 +115,12 @@ export const ConteinerTextWelcome = styled.div`
         }
 
 
-        @media (min-width:501px) {
+        @media (min-width:553px) {
             top:45vh;
             left:25vw;
         }
 
-        @media (min-width:950px) {
+        @media (min-width:1120px) {
             top:2vh;
             left:10vw;
         }
@@ -137,11 +158,11 @@ export const Button = styled.button`
             left:1vw;
         }
 
-        @media (min-width:501px) {
+        @media (min-width:553px) {
             left:-15vw;
         }
 
-        @media (min-width:950px) {
+        @media (min-width:1120px) {
             top:155%;
             left:-0.3vw;
         }
@@ -166,12 +187,12 @@ export const ImageSocial = styled.div`
             left:60vw;
         }
 
-        @media (min-width:501px) {
+        @media (min-width:553px) {
             top:67vh;
             left:60vw;
         }
 
-        @media (min-width:950px) {
+        @media (min-width:1120px) {
             top:45vh;
             left:10vw;
           
@@ -231,7 +252,7 @@ export const About = styled.div`
     }
 
     @media (min-width:412px) {
-        top:1000px;
+        top:1100px;
         h1{
             font-size: 30px;
         }
@@ -241,8 +262,8 @@ export const About = styled.div`
         }
     }
 
-    @media (min-width:510px) {
-        top:1100px;
+    @media (min-width:553px) {
+        top:1200px;
     }
 
     @media (min-width:636px) {
@@ -255,8 +276,8 @@ export const About = styled.div`
         }
     }
 
-    @media (min-width:950px) {
-        top:988px;
+    @media (min-width:1120px) {
+        top:1088px;
     }
 
 
@@ -300,7 +321,7 @@ export const ImageTecs = styled.div`
 
 export const Projects = styled.div`
     position:relative;
-    top:1100px;
+    top:1300px;
     
     h1{
         font-family: 'Roboto';
@@ -356,10 +377,149 @@ export const Projects = styled.div`
     }
 
     @media (min-width:510px) {
-        top:1158px;
+        top:1400px;
+    }
+
+    @media (min-width:1100px) {
+        top:1350px;
     }
 
     
 `
 
 
+export const Contact = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    position:relative;
+    top:2000px;
+
+    p{
+        position:relative;
+        top:80px;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:#445964;
+        width:330px;
+
+        &:nth-child(1){
+            text-align: right;
+            position:absolute;
+            width:300px;
+            top:-80px;
+            left:10vw;
+        } 
+    }
+
+    span{
+        color:#263138;
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    h1{
+        position:relative;
+        top:120px;
+        font-family: "Roboto";
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: center;
+        color:#263138;
+
+    }
+
+    @media (min-width:412px) {
+        p{
+            top:120px;
+            width:400px;
+            text-align: right;
+
+            &:nth-child(1){
+                width:300px;
+                top:-80px;
+                left:25vw;
+            } 
+        }
+
+        h1{
+            top:150px;
+        }
+    }
+
+    @media (min-width:551px) {
+        p{
+            &:nth-child(1){
+                left:30vw;
+            } 
+        }
+
+    }
+
+    @media (min-width:660px) {
+        p{
+            &:nth-child(1){
+                left:40vw;
+            } 
+        }
+    }
+
+    @media (min-width:841px) {
+        p{
+            &:nth-child(1){
+                left:45vw;
+            } 
+        }
+    }
+
+
+    @media (min-width:1000px) {
+        p{
+            &:nth-child(1){
+                left:55vw;
+            } 
+        }
+    }
+
+    @media (min-width:1200px) {
+        p{
+            &:nth-child(1){
+                left:60vw;
+            } 
+        }
+    }
+
+
+`
+
+
+export const FormContact = styled.div`
+    width:90vw;
+    height:50vh;
+    background-color:#576E7AD9;
+    border-radius:20px;
+
+    @media (min-width:412px) {
+        width:80vw;
+        height:50vh;
+    }
+
+
+`
+
+export const ImageFrase = styled.div`
+    position:relative;
+    width:5px;
+    height:5px;
+    top:20px;
+    left:-40px;
+    
+
+`

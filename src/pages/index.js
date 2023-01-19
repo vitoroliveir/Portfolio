@@ -10,7 +10,10 @@ import {
   ImageI,
   Tecs,
   ImageTecs,
-  Projects
+  Projects,
+  Contact,
+  FormContact,
+  ImageFrase
 } from '../styles/index'
 import Sidebar from '../components/Sidebar'
 import Image from 'next/image'
@@ -165,6 +168,27 @@ export default function Home() {
         </div>
         
       </Projects>
+
+
+      <Contact>
+        <p>Minha jornada esta apenas começando, sempre aprendendo</p>
+
+        <FormContact>
+
+        </FormContact>
+
+        <ImageFrase>
+          <Image
+            src="/image/aspas.svg"
+            alt="home"
+            width={90}
+            height={90}
+          />
+        </ImageFrase>
+
+        <p>“<span>Aprender</span> é a unica coisa que <span>a mente não se cansa</span>, nunca tem medo e nunca se arrepende”</p>
+        <h1>~Leonardo da Vinci</h1>
+      </Contact>
     </Body>
   )
 }
