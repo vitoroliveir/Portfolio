@@ -6,7 +6,7 @@ import { Container, Links, Logo } from './styles';
 export default function Sidebar() {
     return (
         <Container>
-            <Logo>
+            <Logo data-aos="fade-right">
                 <Image
                     src="/image/Group.svg"
                     alt="logo"
@@ -21,7 +21,6 @@ export default function Sidebar() {
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#sobre'>Sobre</a></li>
                     <li><a href='#portfolio'>Portfólio</a></li>
-                    <li><a href='#servicos'>Serviços</a></li>
                     <li><a href='#contato'>Contato</a></li>
                 </ul>
 

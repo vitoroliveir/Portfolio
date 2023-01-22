@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Links = styled.div`
     position:absolute;
-    left:55%;
+    left:55vw;
     ul{
         display:flex;
         flex-direction:row;
@@ -24,7 +24,7 @@ export const Links = styled.div`
     a{
         width:51px;
         height:23px;
-        color: rgba(68, 89, 100, 1);
+        color: var(--gray-200);
         text-decoration:none;
         font-size: 20px;
         font-family: 'Roboto';
@@ -34,7 +34,13 @@ export const Links = styled.div`
 
     }
 
+    @media (max-width:850px){
+        left:50vw;
+    }
 
+    @media (max-width:740px){
+        display: none;
+    }
 
     @media (min-width:1600px) {
         left:60vw;
@@ -48,8 +54,7 @@ export const Logo = styled.div`
     width: 327px;
     height: 55px;
     position:absolute;
-    left:5%;
-
+    left:5vw;
 
     >p{
         font-family: "Roboto";
@@ -60,13 +65,11 @@ export const Logo = styled.div`
 
         margin-left:15px;
 
-        color:#445964;
+        color:var(--gray-200);
     }
-
-
-    
 
     @media (min-width:1600px) {
         left:10vw;
     }
+
 `;

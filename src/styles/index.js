@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Body = styled.div`
-    background-color:white;
+    background-color:var(--whiter-100);
     width:100vw;
     height:3850px;
 
@@ -39,6 +39,9 @@ export const ImageHome = styled.div`
         height:350px;
         top:-8vw;
         
+        animation-name:moveImage;
+        animation-duration:2s;
+
         @media (min-width:412px) {
             width:400px;
             height:400px;
@@ -71,6 +74,17 @@ export const ImageHome = styled.div`
         @media (min-width:1600px) {
             left:55vw;
         }
+
+        @keyframes moveImage {
+            from{
+                opacity:0;
+                transform: translateY(3%);
+            }
+            to{
+                opacity:1;
+                transform: translateY(0);
+            }
+        }
 `
 
 export const ConteinerTextWelcome = styled.div`
@@ -78,6 +92,8 @@ export const ConteinerTextWelcome = styled.div`
         left:5vw;
         top:48vh;
 
+        animation-name:moveText;
+        animation-duration:2s;
 
         >h1{
             font-family: 'Roboto';
@@ -86,7 +102,7 @@ export const ConteinerTextWelcome = styled.div`
             font-size: 42px;
             line-height: 50px;
 
-            color: #445964;
+            color: var(--gray-200);
         }
 
         p{
@@ -96,7 +112,7 @@ export const ConteinerTextWelcome = styled.div`
             line-height: 28px;
             letter-spacing: 0em;
             text-align: left;
-            color: #445964;
+            color: var(--gray-200);
             margin-top:7px;
             margin-bottom:7px;
 
@@ -128,6 +144,17 @@ export const ConteinerTextWelcome = styled.div`
         @media (min-width:1600px) {
             left:20vw;
         }
+
+        @keyframes moveText {
+            from{
+                opacity:0;
+                transform: translateX(-6%);
+            }
+            to{
+                opacity:1;
+                transform: translateX(0);
+            }
+        }
 `
 
 export const Button = styled.button`
@@ -142,7 +169,7 @@ export const Button = styled.button`
         width: 250px;
         height: 62px;
 
-        background: #263138;
+        background: var(--gray-300);
         border-radius: 20px;
         border:0 ; 
 
@@ -152,7 +179,7 @@ export const Button = styled.button`
         font-size: 20px;
         line-height: 28px;
 
-        color: #FFFFFF;
+        color: var(--whiter-100);
 
         @media (min-width:412px) {
             left:1vw;
@@ -201,6 +228,17 @@ export const ImageSocial = styled.div`
         @media (min-width:1600px) {
             left:19.2vw;
         }
+
+        @keyframes moveText {
+            from{
+                opacity:0;
+                transform: translateX(-6%);
+            }
+            to{
+                opacity:1;
+                transform: translateX(0);
+            }
+        }
 `
 
 export const About = styled.div`
@@ -218,7 +256,7 @@ export const About = styled.div`
         font-weight: 900;
         font-size: 25px;
         line-height: 75px;
-        color:#445964;
+        color:var(--gray-200);
     }
 
     h2{
@@ -227,12 +265,12 @@ export const About = styled.div`
         font-weight: 900;
         font-size: 36px;
         line-height: 75px;
-        color:#445964;
+        color:var(--gray-200);
 
         margin-top:30px;
 
         span{
-            color:#263138;
+            color:var(--gray-300);
         }
     }
 
@@ -248,7 +286,7 @@ export const About = styled.div`
         display: flex;
         align-items: center;
         text-align: center;
-        color:#445964;
+        color:var(--gray-200);
     }
 
     @media (min-width:412px) {
@@ -311,10 +349,24 @@ export const ImageTecs = styled.div`
     position:relative;
     margin:10px;
 
+    animation-name:moveTexts;
+    animation-duration:2s;
+
     @media (min-width:412px) {
         width:136px;
         margin:15px;
     }
+
+    @keyframes moveTexts {
+            from{
+                opacity:0;
+                transform: translateX(-20%);
+            }
+            to{
+                opacity:1;
+                transform: translateX(0);
+            }
+        }
     
 
 `;
@@ -329,10 +381,10 @@ export const Projects = styled.div`
         font-weight: 900;
         letter-spacing: 0em;
         text-align: left;
-        color:#445964;
+        color:var(--gray-200);
         width:10px;
         span{
-            color:#263138;
+            color:var(--gray-300);
         }
 
     }
@@ -347,7 +399,7 @@ export const Projects = styled.div`
         align-items: center;
         width:350px;
 
-        color: #445964;
+        color: var(--gray-200);
 
         position:relative;
         left:-2%;
@@ -359,7 +411,7 @@ export const Projects = styled.div`
         } 
 
         @media (min-width:845px) {
-            left:23%;
+            left:70%;
             top:15px;
             width:350px;
         }
@@ -369,7 +421,7 @@ export const Projects = styled.div`
 
     div{
         &:nth-child(1){
-            position:relative;
+            position:absolute;
             left:10vw;
             display:flex;
             flex-direction:row;
@@ -386,7 +438,6 @@ export const Projects = styled.div`
 
     
 `
-
 
 export const Contact = styled.div`
     display:flex;
@@ -405,7 +456,7 @@ export const Contact = styled.div`
         line-height: 23px;
         letter-spacing: 0em;
         text-align: left;
-        color:#445964;
+        color:var(--gray-200);
         width:330px;
 
         &:nth-child(1){
@@ -432,7 +483,7 @@ export const Contact = styled.div`
         line-height: 42px;
         letter-spacing: 0em;
         text-align: center;
-        color:#263138;
+        color:var(--gray-300);
 
     }
 
@@ -499,13 +550,12 @@ export const Contact = styled.div`
 
 `
 
-
 export const FormContact = styled.div`
     width:90vw;
     height:50vh;
-    background-color:#576E7AD9;
+    background-color:var(--gray-100);
     border-radius:20px;
-
+    #576E7AD9
     @media (min-width:412px) {
         width:80vw;
         height:50vh;
