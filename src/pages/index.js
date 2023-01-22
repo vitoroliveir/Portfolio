@@ -95,7 +95,7 @@ export default function Home() {
 
         <p>
           My name is Vitor de Oliveira Costa 👋
-          I'm from Brazil, Brasilia/DF. graduated in Systems Analysis and Development.
+          I&apos;m from Brazil, Brasilia/DF. graduated in Systems Analysis and Development.
         </p>
 
         <h2><span>Hard</span> Skills</h2>
