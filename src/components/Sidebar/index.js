@@ -17,8 +17,8 @@ export default function Sidebar() {
             </Logo>
 
             <Links>
-                <ul>
-                    <li><a href='#home'>Home</a></li>
+                <ul data-aos="zoom-in">
+                    <li><a href='#home' >Home</a></li>
                     <li><a href='#sobre'>Sobre</a></li>
                     <li><a href='#portfolio'>Portfólio</a></li>
                     <li><a href='#contato'>Contato</a></li>

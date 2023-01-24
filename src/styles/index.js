@@ -1,26 +1,33 @@
 import styled from 'styled-components';
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export const Body = styled.div`
     background-color:var(--whiter-100);
     width:100vw;
-    height:3850px;
+    height:4370px;
 
     @media (min-width:412px) {
-        height:3960px;
+        height:4180px;
     }
 
     @media (min-width:622px) {
-        height:3800px;
+        height:4030px;
     }
 
     @media (min-width:829px) {
-        height:3680px;
+        height:3400px;
     }
 
     @media (min-width:1037px) {
-        height:3550px;
+        height:3770px;
     }
 `
+
+export const IconIoLogoWhatsap = styled(IoLogoWhatsapp)`
+    width: 40px;
+    height: 38px;
+    color:var(--gray-200);
+`;
 
 export const LinkHome = styled.div`
         position:absolute;
@@ -172,6 +179,7 @@ export const Button = styled.button`
         background: var(--gray-300);
         border-radius: 20px;
         border:0 ; 
+        cursor:pointer;
 
         font-family: 'Roboto';
         font-style: normal;
@@ -445,11 +453,11 @@ export const Contact = styled.div`
     justify-content:center;
     flex-direction:column;
     position:relative;
-    top:2000px;
+    top:2340px;
 
     p{
         position:relative;
-        top:80px;
+        top:150px;
         font-family: "Roboto";
         font-size: 18px;
         font-weight: 500;
@@ -476,7 +484,7 @@ export const Contact = styled.div`
 
     h1{
         position:relative;
-        top:120px;
+        top:180px;
         font-family: "Roboto";
         font-size: 25px;
         font-weight: 900;
@@ -552,12 +560,69 @@ export const Contact = styled.div`
 
 export const FormContact = styled.div`
     width:90vw;
-    height:50vh;
+    height:80vh;
     background-color:var(--gray-100);
     border-radius:20px;
-    #576E7AD9
+
+    h1{
+        font-family: "Poppins";
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:var(--black-100);
+        margin-bottom:30px;
+
+    }
+
+    p{
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:var(--whiter-100);
+
+    }
+
+    div{
+        &:nth-child(1){
+          position:absolute;
+          top:-20vh;
+          left:10vw;
+
+        } 
+    }
+
     @media (min-width:412px) {
         width:80vw;
+        height:70vh;
+
+        div{
+            &:nth-child(1){
+                display:flex;
+                flex-direction:column;
+
+                left:15vw;
+                top:-10vh;
+
+                width:30vh;
+
+            } 
+        }
+    }
+
+    @media (min-width:622px) {
+        height:80vh;
+    }
+
+    @media (min-width:829px) {
+        height:70vh;
+    }
+
+    @media (min-width:1037px) {
         height:50vh;
     }
 
@@ -568,8 +633,45 @@ export const ImageFrase = styled.div`
     position:relative;
     width:5px;
     height:5px;
-    top:20px;
+    top:50px;
     left:-40px;
     
 
 `
+
+export const ImageSocial2 = styled.div`
+    width:60vw;
+    display:flex;
+    justify-content:space-between;
+    position:absolute;
+    top:20vh;
+    left:15vw;
+
+    @media (min-width:412px) {
+        width:200px;
+    }
+
+    @media (min-width:1037px) {
+        width:200px;
+        left:15vw;
+    }
+`
+
+export const Form = styled.div`
+    position: absolute;
+    left: -5vw;
+    top: 18vh;
+
+    @media (min-width:412px) {
+        top: 15vh;
+        left: -0.5vw;
+    }
+
+    @media (min-width:1037px) {
+        left: 35vw;
+        top: -5vh;
+    }
+
+
+`
+

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {
   Body,
+  IconIoLogoWhatsap,
   LinkHome,
   ImageHome,
   ConteinerTextWelcome,
@@ -13,13 +14,16 @@ import {
   Projects,
   Contact,
   FormContact,
-  ImageFrase
+  ImageFrase,
+  ImageSocial2,
+  Form
 } from '../styles/index'
 import Sidebar from '../components/Sidebar'
 import Image from 'next/image'
 import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import FormContacts from '../components/FormContact'
 
 export default function Home() {
   useEffect(()=>{
@@ -70,13 +74,9 @@ export default function Home() {
             height="38"
             
           />
-          <Image
-            src="/image/sms.png"
-            alt="home"
-            width="40"
-            height="40"
-            
-          />
+
+          <IconIoLogoWhatsap/>
+
         </ImageSocial>
 
       </LinkHome>
@@ -176,7 +176,7 @@ export default function Home() {
       </About>
 
       <Projects>
-        <div>
+        <div data-aos="fade-right"> 
           <h1><span>Meu</span> Portfólio</h1>
           <p>Estes são alguns dos trabalhos e projetos que já realizei</p>
         </div>
@@ -187,6 +187,11 @@ export default function Home() {
         <p>Minha jornada esta apenas começando, sempre aprendendo</p>
 
         <FormContact>
+          <div>
+            <h1>Connect with me:</h1>
+            <p>Satisfied with me? Please contact me</p>
+          </div>
+
 
         </FormContact>
 
@@ -201,6 +206,38 @@ export default function Home() {
 
         <p>“<span>Aprender</span> é a unica coisa que <span>a mente não se cansa</span>, nunca tem medo e nunca se arrepende”</p>
         <h1>~Leonardo da Vinci</h1>
+
+        <ImageSocial2 >
+          <Image
+            src="/image/Git.svg"
+            alt="home"
+            width="40"
+            height="38"
+            data-aos="zoom-in"
+          />
+          <Image
+            src="/image/Linkedin.svg"
+            alt="home"
+            width="40"
+            height="38"
+            data-aos="zoom-in"
+          />
+
+          <Image
+            src="/image/sms.png"
+            alt="home"
+            width="40"
+            height="38"
+            data-aos="zoom-in"
+          />
+
+          <IconIoLogoWhatsap data-aos="zoom-in"/>
+          
+          <Form>
+            <FormContacts/>
+          </Form>
+          
+        </ImageSocial2>
       </Contact>
     </Body>
   )
