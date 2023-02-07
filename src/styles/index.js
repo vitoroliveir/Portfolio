@@ -5,7 +5,10 @@ export const Body = styled.div`
     background-color:var(--whiter-100);
     width:100vw;
     height:4370px;
-
+    position: relative;
+    right: 17px;
+    top: -100;
+    
     @media (min-width:412px) {
         height:4180px;
     }
@@ -31,11 +34,13 @@ export const IconIoLogoWhatsap = styled(IoLogoWhatsapp)`
 
 export const LinkHome = styled.div`
         position:absolute;
-        top:17%;
+        top:4%;
 
         @media (min-width:553px) {
-            top:25%;
+            top:6%;
         }
+
+        
 `
 
 export const ImageHome = styled.div`
@@ -60,7 +65,7 @@ export const ImageHome = styled.div`
             width:500px;
             height:500px;
             left:7vw;
-            top:-7vh;
+            top:-10vh;
         }
 
         @media (min-width:656px) {
@@ -69,11 +74,15 @@ export const ImageHome = styled.div`
         }
 
         @media (min-width:700px) {
-            left:23vw;
-            
+             margin-left: 8vw;
+        }
+
+        @media (min-width:828px) {
+             margin-left: 15vw;
         }
 
         @media (min-width:1120px) {
+            margin-left: 0;
             left:53vw;
             top:0vh;
         }
@@ -139,7 +148,7 @@ export const ConteinerTextWelcome = styled.div`
 
 
         @media (min-width:553px) {
-            top:45vh;
+            top:41vh;
             left:25vw;
         }
 
@@ -195,6 +204,7 @@ export const Button = styled.button`
 
         @media (min-width:553px) {
             left:-15vw;
+            top:105%;
         }
 
         @media (min-width:1120px) {
@@ -223,7 +233,7 @@ export const ImageSocial = styled.div`
         }
 
         @media (min-width:553px) {
-            top:67vh;
+            top:62vh;
             left:60vw;
         }
 
