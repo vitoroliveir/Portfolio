@@ -105,7 +105,7 @@ export const ImageHome = styled.div`
 
 export const ConteinerTextWelcome = styled.div`
         position:absolute;
-        left:5vw;
+        left:8vw;
         top:48vh;
 
         animation-name:moveText;
@@ -225,11 +225,16 @@ export const ImageSocial = styled.div`
         width:174px;
         position:absolute;
         top:88vh;
-        left:27vw;
+        left:30vw;
 
         @media (min-width:412px) {
+            top:68vh;
+            left:69vw;
+        }
+
+        @media (min-width:499px) {
             top:67vh;
-            left:60vw;
+            left:64vw;
         }
 
         @media (min-width:553px) {
@@ -267,6 +272,7 @@ export const About = styled.div`
 
     position:relative;
     top:1028px;
+    left: 25px;
 
     h1{
         font-family: 'Roboto';
@@ -317,6 +323,7 @@ export const About = styled.div`
             width:95vw;
         }
     }
+
 
     @media (min-width:553px) {
         top:1200px;
@@ -510,6 +517,7 @@ export const Contact = styled.div`
             top:120px;
             width:400px;
             text-align: right;
+            left: 5px;
 
             &:nth-child(1){
                 width:300px;
@@ -569,10 +577,12 @@ export const Contact = styled.div`
 `
 
 export const FormContact = styled.div`
-    width:90vw;
+    width:80vw;
     height:80vh;
     background-color:var(--gray-100);
     border-radius:20px;
+    left: 35px;
+    position: relative;
 
     h1{
         font-family: "Poppins";
@@ -609,17 +619,25 @@ export const FormContact = styled.div`
     @media (min-width:412px) {
         width:80vw;
         height:70vh;
+        left: 15px;
 
         div{
             &:nth-child(1){
                 display:flex;
                 flex-direction:column;
 
-                left:15vw;
+                left:1vw;
                 top:-10vh;
 
                 width:30vh;
 
+            } 
+        }
+    }
+    @media (min-width:499px) {
+        div{
+            &:nth-child(1){
+                left:4vw;
             } 
         }
     }
@@ -655,7 +673,7 @@ export const ImageSocial2 = styled.div`
     justify-content:space-between;
     position:absolute;
     top:20vh;
-    left:15vw;
+    left:21vw;
 
     @media (min-width:412px) {
         width:200px;
@@ -674,7 +692,7 @@ export const Form = styled.div`
 
     @media (min-width:412px) {
         top: 15vh;
-        left: -0.5vw;
+        left: -3vw;
     }
 
     @media (min-width:1037px) {
