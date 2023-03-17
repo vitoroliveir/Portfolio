@@ -272,7 +272,7 @@ export const About = styled.div`
 
     position:relative;
     top:1028px;
-    left: 25px;
+    left: 2vw;
 
     h1{
         font-family: 'Roboto';
@@ -315,6 +315,8 @@ export const About = styled.div`
 
     @media (min-width:412px) {
         top:1100px;
+        left: 0;
+        
         h1{
             font-size: 30px;
         }
