@@ -62,26 +62,24 @@ export default function Home() {
         </ImageHome>
 
         <ImageSocial>
-          <a href='https://github.com/vitoroliveir' target="_blank">
+          <a href='https://github.com/vitoroliveir' target="_blank" rel="noreferrer">
             <Image
               src="/image/Git.svg"
               alt="home"
               width="40"
               height="38"
-
             />
           </a>
 
-          <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' target="_blank">
+          <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' rel="noreferrer" target="_blank">
             <Image
               src="/image/Linkedin.svg"
               alt="home"
               width="40"
               height="38"
-
             />
           </a>
-          <a href='https://wa.me/5561995736332' target="_blank">
+          <a href='https://wa.me/5561995736332' target="_blank" rel="noreferrer">
             <IconIoLogoWhatsap />
           </a>
 
@@ -156,7 +154,7 @@ export default function Home() {
         <h1>~Leonardo da Vinci</h1>
 
         <ImageSocial2 >
-          <a href='https://github.com/vitoroliveir' target="_blank">
+          <a href='https://github.com/vitoroliveir' rel="noreferrer" target="_blank">
             <Image
               src="/image/Git.svg"
               alt="home"
@@ -166,7 +164,7 @@ export default function Home() {
             />
           </a>
 
-          <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' target="_blank">
+          <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' rel="noreferrer" target="_blank">
             <Image
               src="/image/Linkedin.svg"
               alt="home"
@@ -175,11 +173,11 @@ export default function Home() {
 
             />
           </a>
-          <a href='https://wa.me/5561995736332' target="_blank">
+          <a href='https://wa.me/5561995736332' rel="noreferrer" target="_blank">
             <IconIoLogoWhatsap />
           </a>
 
-          <a href='mailto:vitoroliveira732@gmail.com' target="_blank">
+          <a href='mailto:vitoroliveira732@gmail.com' rel="noreferrer" target="_blank">
             <Image
               src="/image/sms.png"
               alt="home"
