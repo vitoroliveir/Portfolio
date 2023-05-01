@@ -26,12 +26,14 @@ export default function HardSkills({ stack, percent }) {
               alt="html"
               width={22}
               height={35}
+              key={e.id}
 
             /> : <Image
               src="/image/Vector.svg"
               alt="html"
               width={22}
               height={35}
+              key={e.id}
             />
           ))
         }
