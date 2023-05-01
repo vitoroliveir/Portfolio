@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import {
   Body,
   IconIoLogoWhatsap,
@@ -24,13 +25,14 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import FormContacts from '../components/FormContact'
+import HardSkills from '../components/HardSkills'
 
 export default function Home() {
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init({
-      duration:2000
+      duration: 2000
     })
-  },[])
+  }, [])
 
   return (
     <Body>
@@ -48,48 +50,46 @@ export default function Home() {
           <h1>EU SOU UM PROGRAMADOR</h1>
           <p>Seja bem-vindo ao meu portifólio website </p>
 
-          <Button data-aos="fade-right">Saiba mais sobre mim</Button>
+          <Button>Saiba mais sobre mim</Button>
 
         </ConteinerTextWelcome>
         <ImageHome>
           <Image
-            src="/image/Home_art.svg"
+            src="/image/Home_art.svg" s
             alt="home"
             fill
           />
         </ImageHome>
 
-        <ImageSocial data-aos="zoom-in-right">
-          <Image
-            src="/image/Git.svg"
-            alt="home"
-            width="40"
-            height="38"
-            
-          />
-          <Image
-            src="/image/Linkedin.svg"
-            alt="home"
-            width="40"
-            height="38"
-            
-          />
+        <ImageSocial>
+          <a href='https://github.com/vitoroliveir' target="_blank">
+            <Image
+              src="/image/Git.svg"
+              alt="home"
+              width="40"
+              height="38"
 
-          <IconIoLogoWhatsap/>
+            />
+          </a>
+
+          <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' target="_blank">
+            <Image
+              src="/image/Linkedin.svg"
+              alt="home"
+              width="40"
+              height="38"
+
+            />
+          </a>
+          <a href='https://wa.me/5561995736332' target="_blank">
+            <IconIoLogoWhatsap />
+          </a>
 
         </ImageSocial>
 
       </LinkHome>
 
       <About data-aos="fade-right">
-        <ImageI>
-          <Image
-            src="/image/vitor.jpg"
-            alt="vitor"
-            fill
-            
-          />
-        </ImageI>
 
         <h1>Vitor de Oliveira Costa</h1>
 
@@ -100,87 +100,35 @@ export default function Home() {
 
         <h2><span>Hard</span> Skills</h2>
 
-
         <Tecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/python.svg"
-              alt="python"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/html.svg"
-              alt="html"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/react.svg"
-              alt="react"
-              fill
-            />
-          </ImageTecs >
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/php.svg"
-              alt="php"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/node.svg"
-              alt="node"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/reactnative.svg"
-              alt="reactnative"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/javascipt.svg"
-              alt="javascript"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/css.svg"
-              alt="css"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/mysql.svg"
-              alt="mysql"
-              fill
-            />
-          </ImageTecs>
-          <ImageTecs data-aos="zoom-in">
-            <Image
-              src="/image/java.svg"
-              alt="java"
-              fill
-            />
-          </ImageTecs>
+          <HardSkills data-aos="zoom-in" stack={"Python"} percent={3} />
+
+          <HardSkills data-aos="zoom-in" stack={"HTML"} percent={4} />
+
+          <HardSkills data-aos="zoom-in" stack={"React"} percent={4} />
+
+          <HardSkills data-aos="zoom-in" stack={"PHP"} percent={3} />
+
+          <HardSkills data-aos="zoom-in" stack={"Node.js"} percent={3} />
+
+          <HardSkills data-aos="zoom-in" stack={"ReactNative"} percent={3} />
+
+          <HardSkills data-aos="zoom-in" stack={"JavaScript"} percent={4} />
+
+          <HardSkills data-aos="zoom-in" stack={"CSS"} percent={4} />
+
+          <HardSkills data-aos="zoom-in" stack={"MySQL"} percent={4} />
+
+          <HardSkills data-aos="zoom-in" stack={"Java"} percent={2} />
         </Tecs>
       </About>
 
       <Projects>
-        <div data-aos="fade-right"> 
+        <div data-aos="fade-right">
           <h1><span>Meu</span> Portfólio</h1>
           <p>Estes são alguns dos trabalhos e projetos que já realizei</p>
         </div>
-        
+
       </Projects>
 
       <Contact>
@@ -208,35 +156,44 @@ export default function Home() {
         <h1>~Leonardo da Vinci</h1>
 
         <ImageSocial2 >
-          <Image
-            src="/image/Git.svg"
-            alt="home"
-            width="40"
-            height="38"
-            data-aos="zoom-in"
-          />
-          <Image
-            src="/image/Linkedin.svg"
-            alt="home"
-            width="40"
-            height="38"
-            data-aos="zoom-in"
-          />
+          <a href='https://github.com/vitoroliveir' target="_blank">
+            <Image
+              src="/image/Git.svg"
+              alt="home"
+              width="40"
+              height="38"
 
-          <Image
-            src="/image/sms.png"
-            alt="home"
-            width="40"
-            height="38"
-            data-aos="zoom-in"
-          />
+            />
+          </a>
 
-          <IconIoLogoWhatsap data-aos="zoom-in"/>
-          
+          <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' target="_blank">
+            <Image
+              src="/image/Linkedin.svg"
+              alt="home"
+              width="40"
+              height="38"
+
+            />
+          </a>
+          <a href='https://wa.me/5561995736332' target="_blank">
+            <IconIoLogoWhatsap />
+          </a>
+
+          <a href='mailto:vitoroliveira732@gmail.com' target="_blank">
+            <Image
+              src="/image/sms.png"
+              alt="home"
+              width="40"
+              height="38"
+              data-aos="zoom-in"
+            />
+          </a>
+
+
           <Form>
-            <FormContacts/>
+            <FormContacts />
           </Form>
-          
+
         </ImageSocial2>
       </Contact>
     </Body>

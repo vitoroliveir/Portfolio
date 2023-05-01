@@ -212,9 +212,6 @@ export const Button = styled.button`
             left:-0.3vw;
         }
 
-        @media (min-width:1600px) {
-            
-        }
 `
 
 export const ImageSocial = styled.div`
@@ -226,6 +223,7 @@ export const ImageSocial = styled.div`
         position:absolute;
         top:88vh;
         left:30vw;
+        cursor: pointer;
 
         @media (min-width:412px) {
             top:68vh;
@@ -252,16 +250,6 @@ export const ImageSocial = styled.div`
             left:19.2vw;
         }
 
-        @keyframes moveText {
-            from{
-                opacity:0;
-                transform: translateX(-6%);
-            }
-            to{
-                opacity:1;
-                transform: translateX(0);
-            }
-        }
 `
 
 export const About = styled.div`
@@ -314,7 +302,7 @@ export const About = styled.div`
     }
 
     @media (min-width:412px) {
-        top:1100px;
+        top:1000px;
         left: 0;
         
         h1{
@@ -328,7 +316,7 @@ export const About = styled.div`
 
 
     @media (min-width:553px) {
-        top:1200px;
+        top:1100px;
     }
 
     @media (min-width:636px) {
@@ -342,22 +330,12 @@ export const About = styled.div`
     }
 
     @media (min-width:1120px) {
-        top:1088px;
+        top:1000px;
     }
 
 
 `;
 
-export const ImageI = styled.div`
-    width:207px;
-    height:174px;
-
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    top:-50px;
-`;
 
 export const Tecs = styled.div`
     display:flex;

@@ -80,6 +80,7 @@ export const Container = styled.div`
         line-height: 21px;
         letter-spacing: 0.0125em;
         text-align: center;
+        cursor: pointer;
 
 
         color: var(--whiter-100);

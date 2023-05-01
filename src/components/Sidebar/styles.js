@@ -1,17 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    position:absolute;
-    top:60px;
+    position:fixed;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    z-index: 1000;
     width:100vw;
+    height: 5vh;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    background-color: ${props => props.scroll ? "var(--whiter-150)" : "none"} ;
 `;
 
 export const Links = styled.div`
     position:absolute;
     left:55vw;
+    
     ul{
         display:flex;
         flex-direction:row;
@@ -32,6 +37,13 @@ export const Links = styled.div`
         line-height: 23px;
         letter-spacing: 0em;
 
+    }
+    li:hover{
+        a{
+            color: var(--gray-100);
+        }
+            
+        
     }
 
     @media (max-width:850px){

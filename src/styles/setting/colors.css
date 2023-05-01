@@ -1,8 +1,10 @@
 :root{
     --whiter-100:#FFFFFF;
+    --whiter-150:rgba(251, 251, 251, 1);
     --black-100:black;
     --blue-100:#0c1821;
     --gray-50:#F5F5F5;
+    --gray-50-10:#f5f5f5a7;
     --gray-100:#576E7AD9;
     --gray-200:#445964;
     --gray-300:#263138;
