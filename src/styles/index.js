@@ -10,19 +10,19 @@ export const Body = styled.div`
     top: -100;
     
     @media (min-width:412px) {
-        height:4180px;
+        height:4100px;
     }
 
     @media (min-width:622px) {
-        height:4030px;
+        height:4070px;
     }
 
     @media (min-width:829px) {
-        height:3400px;
+        height:3850px;
     }
 
     @media (min-width:1037px) {
-        height:3770px;
+        height:3570px;
     }
 `
 
@@ -348,34 +348,6 @@ export const Tecs = styled.div`
 
 `;
 
-export const ImageTecs = styled.div`
-    width:120px;
-    height:98px;
-    position:relative;
-    margin:10px;
-
-    animation-name:moveTexts;
-    animation-duration:2s;
-
-    @media (min-width:412px) {
-        width:136px;
-        margin:15px;
-    }
-
-    @keyframes moveTexts {
-            from{
-                opacity:0;
-                transform: translateX(-20%);
-            }
-            to{
-                opacity:1;
-                transform: translateX(0);
-            }
-        }
-    
-
-`;
-
 export const Projects = styled.div`
     position:relative;
     top:1300px;
@@ -442,6 +414,48 @@ export const Projects = styled.div`
     }
 
     
+`
+export const BottonPortfolio = styled.button`
+    height: 45px;
+    width: 146px;
+    border-radius: 20px;
+
+    background-color: #DFDFDF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0em;
+    text-align: center;
+    color:var(--gray-200);
+
+    border: none;
+
+    cursor: pointer;
+    
+    &:nth-child(1){
+        width: 90px;
+    } 
+
+    :hover{
+        background-color:#263138 ;
+        color: white;
+    }
+    
+
+`
+
+export const Bottons = styled.div`
+    position: absolute;
+    top: 155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 36vw;
+
 `
 
 export const Contact = styled.div`

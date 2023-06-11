@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import {
   Body,
   IconIoLogoWhatsap,
@@ -9,15 +8,15 @@ import {
   Button,
   ImageSocial,
   About,
-  ImageI,
   Tecs,
-  ImageTecs,
   Projects,
   Contact,
   FormContact,
   ImageFrase,
   ImageSocial2,
-  Form
+  Form,
+  BottonPortfolio,
+  Bottons
 } from '../styles/index'
 import Sidebar from '../components/Sidebar'
 import Image from 'next/image'
@@ -26,6 +25,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import FormContacts from '../components/FormContact'
 import HardSkills from '../components/HardSkills'
+import Link from 'next/link'
 
 export default function Home() {
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function Home() {
 
       <Sidebar />
 
-      <LinkHome>
+      <LinkHome id="home">
         <ConteinerTextWelcome>
           <p>Olá pessoas, </p>
           <h1>EU SOU UM PROGRAMADOR</h1>
@@ -70,7 +70,6 @@ export default function Home() {
               height="38"
             />
           </a>
-
           <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' rel="noreferrer" target="_blank">
             <Image
               src="/image/Linkedin.svg"
@@ -82,13 +81,11 @@ export default function Home() {
           <a href='https://wa.me/5561995736332' target="_blank" rel="noreferrer">
             <IconIoLogoWhatsap />
           </a>
-
         </ImageSocial>
 
       </LinkHome>
 
-      <About data-aos="fade-right">
-
+      <About data-aos="fade-right" id="sobre">
         <h1>Vitor de Oliveira Costa</h1>
 
         <p>
@@ -121,15 +118,20 @@ export default function Home() {
         </Tecs>
       </About>
 
-      <Projects>
+      <Projects id="portfolio">
         <div data-aos="fade-right">
           <h1><span>Meu</span> Portfólio</h1>
           <p>Estes são alguns dos trabalhos e projetos que já realizei</p>
+          <Bottons>
+            <BottonPortfolio>All</BottonPortfolio>
+            <BottonPortfolio>Front-end</BottonPortfolio>
+            <BottonPortfolio>Back-end</BottonPortfolio>
+          </Bottons>
         </div>
 
       </Projects>
 
-      <Contact>
+      <Contact id="contato">
         <p>Minha jornada esta apenas começando, sempre aprendendo</p>
 
         <FormContact>
@@ -137,7 +139,6 @@ export default function Home() {
             <h1>Connect with me:</h1>
             <p>Satisfied with me? Please contact me</p>
           </div>
-
 
         </FormContact>
 
@@ -160,23 +161,19 @@ export default function Home() {
               alt="home"
               width="40"
               height="38"
-
             />
           </a>
-
           <a href='https://www.linkedin.com/in/vitor-oliveira-26820b177/' rel="noreferrer" target="_blank">
             <Image
               src="/image/Linkedin.svg"
               alt="home"
               width="40"
               height="38"
-
             />
           </a>
           <a href='https://wa.me/5561995736332' rel="noreferrer" target="_blank">
             <IconIoLogoWhatsap />
           </a>
-
           <a href='mailto:vitoroliveira732@gmail.com' rel="noreferrer" target="_blank">
             <Image
               src="/image/sms.png"
@@ -186,12 +183,9 @@ export default function Home() {
               data-aos="zoom-in"
             />
           </a>
-
-
           <Form>
             <FormContacts />
           </Form>
-
         </ImageSocial2>
       </Contact>
     </Body>
